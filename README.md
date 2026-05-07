@@ -1,8 +1,8 @@
-# CS-4063 NLP Assignment 2: Neural Urdu NLP Pipeline
+# Urdu-Neural-NLP-Pipeline
 
 This project implements Assignment 2 for CS-4063 Natural Language Processing. It extends a BBC Urdu NLP pipeline with vector-space representations, neural word embeddings, sequence labelling, and topic classification models implemented from scratch in PyTorch.
 
-The main work is contained in `i23-2508_Assignment2_DS-B.ipynb`. The notebook includes the full pipeline, saved intermediate artifacts, trained model checkpoints, plots, and written analysis.
+The main work is contained in `Urdu_Neural_NLP_Pipeline.ipynb`. The notebook includes the full pipeline, saved intermediate artifacts, trained model checkpoints, plots, and written analysis.
 
 ## Project Overview
 
@@ -32,7 +32,7 @@ Implemented components include:
 |-- cleaned.txt
 |-- raw.txt
 |-- metadata.json
-|-- i23-2508_Assignment2_DS-B.ipynb
+|-- Urdu_Neural_NLP_Pipeline.ipynb
 |-- data/
 |   |-- pos_train.conll
 |   |-- pos_test.conll
@@ -93,7 +93,7 @@ The notebook automatically detects CUDA and can use multiple GPUs through `nn.Da
 1. Open the notebook:
 
    ```bash
-   jupyter notebook i23-2508_Assignment2_DS-B.ipynb
+   jupyter notebook Urdu_Neural_NLP_Pipeline.ipynb
    ```
 
 2. Run all cells from top to bottom.
@@ -154,5 +154,5 @@ The POS fine-tuned model reaches much stronger performance than the frozen-embed
 
 - Read Urdu text files with UTF-8 encoding. Some terminals may display mojibake if they default to a legacy Windows encoding.
 - The notebook is self-contained and includes explanatory markdown after most major steps.
-- The project folder is not currently a git repository.
+
 - If submitting the project, check whether large dense artifacts such as `embeddings/ppmi_matrix.npy` are required, since the sparse version is far smaller.
